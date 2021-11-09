@@ -1,0 +1,91 @@
+.header {
+    position: relative;
+    display: flex;
+    column-gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: azure;
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+}
+
+.header ul {
+    list-style-type: none;
+}
+
+.header i {
+    font-size: 1.75rem;
+    color: #9D9BA6;
+}
+
+.navDesktopMenu {
+    flex-grow: 1;
+
+    display: none;
+    justify-content: space-between;
+}
+
+.navDesktopMenu > ul {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.navDesktopMenu .link {
+  color: #9D9BA6;
+}
+
+.navDesktopMenu .link:hover {
+    color: black;
+}
+
+.navDesktopMenu .button1 {
+    font-size: .9rem;
+}
+
+.navMobileMenu .link {
+  color: white;
+}
+
+.navMobileMenu .link:hover {
+    color: #9D9BA6;
+}
+
+.navMobileMenu .button1 {
+    font-size: 1.3rem;
+    width: 100%;
+    height: 100%;
+}
+
+.navMobileMenu {
+    position: absolute;
+    top: 3rem;
+    background-color: var(--dark-blue);
+    border-radius: 0.25rem;
+    padding: 1rem;
+    width: calc(100% - 2rem);
+    text-align: center;
+    color: white;
+    z-index: 5;
+}
+
+.navMobileMenu > ul {    
+    display: flex;
+    flex-direction: column;
+    row-gap: .5em;
+    font-size: 1.5rem;
+}
+
+@media (min-width:900px) {
+    .navDesktopMenu {
+        display: flex;
+    }
+
+    .navMobileButton {
+        display: none;
+    }
+
+    .navMobileMenu {
+        display: none;
+    }
+}

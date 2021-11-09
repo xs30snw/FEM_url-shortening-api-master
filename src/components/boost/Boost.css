@@ -1,0 +1,23 @@
+.boost {
+    padding: 5rem 0;
+    background-color: var(--dark-blue);
+    background-image: url("./bg-boost-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.boost h3 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.boost .button1 {
+    font-size: 1.25rem;
+}
+
+@media (min-width:376px) {
+    .boost {
+        background-image: url("./bg-boost-desktop.svg");
+    }
+}

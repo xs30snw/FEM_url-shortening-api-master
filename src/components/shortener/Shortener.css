@@ -1,0 +1,158 @@
+.shortener {
+    background-color: #F0F1F6;
+}
+
+.shortener > * {
+    position: relative;
+    z-index: 2;
+}
+
+.shortener::before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 5rem;
+    z-index: 1;
+    background-color: white;
+}
+
+.shortenerForm {
+    background-color: var(--dark-blue);
+    background-image: url("./bg-shorten-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: right top;
+
+    padding: 1rem;
+    border-radius: .3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.shortenerItem {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: .3rem;
+    margin-top: 1rem;
+}
+
+.shortenerItem > hr {
+    opacity: 0.1;
+}
+
+.shortenerItem > p {
+    margin: 1rem;
+    border-radius: .3rem;
+}
+
+.shortenerItem > p:last-of-type {
+    color: #2BD1D1;
+}
+
+.shortenerItem > button {
+    color: white;
+    font-weight: bold;
+    border: none;
+    background-color: #2BD1D1;
+    cursor: pointer;
+    margin: 0 1rem 1rem 1rem;
+}
+
+.shortenerForm > input,
+.shortenerForm > button {
+    height: 3rem;
+    font-size: 1rem;
+    padding: 0 1rem;
+    border-radius: .3rem;
+}
+
+.shortenerItem > button {
+    height: 2.5em;
+    font-size: .9rem;
+    border-radius: .3rem;
+}
+
+.shortenerForm > button {
+    color: white;
+    font-weight: bold;
+    border: none;
+    background-color: #2BD1D1;
+    cursor: pointer;
+
+    margin-top: 1rem;
+}
+
+.shortenerForm > button:hover,
+.shortenerItem > button:hover {
+    background-color: #9BE3E2;
+}
+
+.shortenerLabel {
+    color: #E6686B;
+    font-style: italic;
+    margin-top: .5rem;
+}
+
+@media (min-width:376px) {
+    .shortenerForm {
+        background-image: url("./bg-shorten-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media (min-width:900px) {
+    .shortenerForm {
+        padding: 2rem;
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 1rem;
+        position: relative;
+    }
+
+    .shortenerLabel {
+        position: absolute;
+        left: 10%;
+        top: 5rem;
+    }
+
+    .shortenerInput {
+        flex: 0 0 70%;
+    }
+
+    .shortenerSubmit {
+        margin: 0 !important;
+        flex: 0 0 20%;
+    }
+
+    .shortenerItem {
+        flex-direction: row;
+        justify-content: space-between;
+        column-gap: 1rem;
+        padding: 1rem;
+        align-items: baseline;
+    }
+
+    .shortenerItem > * {
+        margin: 0 !important;
+    }
+
+    .shortenerItem > p:first-of-type {
+        flex: 1 1 50%;
+    }
+
+    .shortenerItem > p:last-of-type {
+        flex: 0 1 25%;
+        text-align: right;
+    }
+
+    .shortenerItem > button {
+        flex: 0 1 10%;
+    }
+
+    .shortenerItem > hr {
+        display: none;
+    }
+}
