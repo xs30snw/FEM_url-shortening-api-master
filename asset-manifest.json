@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/FEM_url-shortening-api-master/static/css/main.76522e0b.chunk.css",
+    "main.js": "/FEM_url-shortening-api-master/static/js/main.5dcd9902.chunk.js",
+    "main.js.map": "/FEM_url-shortening-api-master/static/js/main.5dcd9902.chunk.js.map",
+    "runtime-main.js": "/FEM_url-shortening-api-master/static/js/runtime-main.2ebf9b43.js",
+    "runtime-main.js.map": "/FEM_url-shortening-api-master/static/js/runtime-main.2ebf9b43.js.map",
+    "static/js/2.6752a1d4.chunk.js": "/FEM_url-shortening-api-master/static/js/2.6752a1d4.chunk.js",
+    "static/js/2.6752a1d4.chunk.js.map": "/FEM_url-shortening-api-master/static/js/2.6752a1d4.chunk.js.map",
+    "index.html": "/FEM_url-shortening-api-master/index.html",
+    "static/css/main.76522e0b.chunk.css.map": "/FEM_url-shortening-api-master/static/css/main.76522e0b.chunk.css.map",
+    "static/js/2.6752a1d4.chunk.js.LICENSE.txt": "/FEM_url-shortening-api-master/static/js/2.6752a1d4.chunk.js.LICENSE.txt",
+    "static/media/Boost.css": "/FEM_url-shortening-api-master/static/media/bg-boost-mobile.4b04bd89.svg",
+    "static/media/Shortener.css": "/FEM_url-shortening-api-master/static/media/bg-shorten-mobile.41c34b33.svg",
+    "static/media/icon-brand-recognition.c349d3b6.svg": "/FEM_url-shortening-api-master/static/media/icon-brand-recognition.c349d3b6.svg",
+    "static/media/icon-detailed-records.265c8aea.svg": "/FEM_url-shortening-api-master/static/media/icon-detailed-records.265c8aea.svg",
+    "static/media/icon-facebook.229c75a0.svg": "/FEM_url-shortening-api-master/static/media/icon-facebook.229c75a0.svg",
+    "static/media/icon-fully-customizable.a1532a74.svg": "/FEM_url-shortening-api-master/static/media/icon-fully-customizable.a1532a74.svg",
+    "static/media/icon-instagram.df587328.svg": "/FEM_url-shortening-api-master/static/media/icon-instagram.df587328.svg",
+    "static/media/icon-pinterest.a2d25ab4.svg": "/FEM_url-shortening-api-master/static/media/icon-pinterest.a2d25ab4.svg",
+    "static/media/icon-twitter.1d5c6d5e.svg": "/FEM_url-shortening-api-master/static/media/icon-twitter.1d5c6d5e.svg",
+    "static/media/illustration-working.c9b5ef54.svg": "/FEM_url-shortening-api-master/static/media/illustration-working.c9b5ef54.svg",
+    "static/media/logo.83464303.svg": "/FEM_url-shortening-api-master/static/media/logo.83464303.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2ebf9b43.js",
+    "static/js/2.6752a1d4.chunk.js",
+    "static/css/main.76522e0b.chunk.css",
+    "static/js/main.5dcd9902.chunk.js"
+  ]
+}
