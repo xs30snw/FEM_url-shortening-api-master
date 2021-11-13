@@ -19,6 +19,7 @@ The project deployed to GitHub with the help of *react-gh-pages* package. The ma
 - [x] Limit the number of shortened link items to 3;
 - [x] Implement link copy, and button copied style;
 - [ ] Copy buttons don't store their copy state;
+- [ ] The link is not copied after the first click;
 - [ ] Proper URL validation function, and error handling;
 - [ ] Layout breaks when links are too long;
 - [ ] Rearrange code;
