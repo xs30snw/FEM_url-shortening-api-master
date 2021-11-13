@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 :root {
   --dark-blue: #3A3053;
+  --font: 'Poppins', sans-serif;
 }
 
 * {
@@ -9,6 +12,7 @@
 }
 
 html {
+  font-family: var(--font);
   font-size: 18px;
 }
 
@@ -34,6 +38,11 @@ h6 {
   display: none;
 }
 
+.copied {
+  background-color: var(--dark-blue) !important;
+}
+
+
 .container {
   padding: 1rem;
 }
@@ -55,9 +64,9 @@ h6 {
   cursor: pointer;
 }
 
-@media (min-width:1200px) {
+@media (min-width:1000px) {
   .container {
-    width: 1200px;
+    width: 1000px;
     margin-left: auto;
     margin-right: auto;
   }

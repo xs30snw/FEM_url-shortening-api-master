@@ -12,7 +12,14 @@ function Header() {
     }
 
     return (
-        <header className="header container">
+        <header 
+            className="header container"
+            onMouseLeave={() => {
+                if (navOpen) {
+                    setNavOpen(false);
+                }
+            }}    
+        >
             <img src={ShortlyLogo} alt="Shortly logo" />
 
             <nav className="navDesktopMenu">
@@ -39,7 +46,7 @@ function Header() {
             </nav>
 
             <i className="las la-bars navMobileButton"
-               onClick={() => handleClick()}    
+               onClick={() => handleClick()}
             ></i>
         </header>
     )

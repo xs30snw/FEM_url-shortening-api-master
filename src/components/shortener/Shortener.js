@@ -19,18 +19,34 @@ export class Shortener extends React.Component {
         fetch('https://api.shrtco.de/v2/shorten?url=' + shortenInput.value)
             .then(response => response.json())
             .then(data => {
+                // Http input validation heuristic
+                const output = data?.result?.full_short_link;
+                if (!output) {
+                    throw 'Problems with shortening';
+                };
+
+                // Limit shortened items to 3
+                if (items.length >= 3) {
+                    items.pop();
+                };
+
                 this.setState({
                     items: items.concat([{
                         input: shortenInput.value,
                         output: data?.result?.full_short_link,
                     }]),
                 })
+                const labelError = document.getElementById('labelError');
+                labelError.classList.add('hide');
+            })
+            .catch(() => {
+                const labelError = document.getElementById('labelError');
+                labelError.classList.remove('hide');
             });
     }
 
     render() {
         const items = this.state.items;
-        console.log(items);
 
         const shortenerItems = items.map((item, id) => {
             return (
@@ -49,7 +65,11 @@ export class Shortener extends React.Component {
                           onSubmit={(e) => this.handleClick(e)}
                     >
                         <input type="text" id="shortenInput" name="shortenInput" className="shortenerInput" placeholder="Shorten a link here..." />
-                        <label htmlFor="shortenInput" className="shortenerLabel">Please add a link</label>
+                        <label
+                            id="labelError"
+                            htmlFor="shortenInput" 
+                            className="shortenerLabel hide"
+                        >Please add a link</label>
                         <button type="submit" className="shortenerSubmit">Shorten It!</button>
                     </form>
                     {shortenerItems}

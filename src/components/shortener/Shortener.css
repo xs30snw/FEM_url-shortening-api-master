@@ -137,14 +137,15 @@
 
     .shortenerItem > * {
         margin: 0 !important;
+        align-self: center;
     }
 
     .shortenerItem > p:first-of-type {
-        flex: 1 1 50%;
+        flex: 1 1 40%;
     }
 
     .shortenerItem > p:last-of-type {
-        flex: 0 1 25%;
+        flex: 0 1 40%;
         text-align: right;
     }
 
