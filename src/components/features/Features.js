@@ -1,4 +1,3 @@
-import React from 'react';
 import './Features.css';
 import iRecognition from './icon-brand-recognition.svg';
 import iRecords from './icon-detailed-records.svg';

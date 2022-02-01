@@ -1,4 +1,3 @@
-import React from 'react';
 import PersonWorking from './illustration-working.svg';
 
 import './Welcome.css';

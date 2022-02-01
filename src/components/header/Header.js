@@ -1,4 +1,3 @@
-import React from 'react';
 import { useState } from 'react';
 import ShortlyLogo from './logo.svg';
 
@@ -24,23 +23,23 @@ function Header() {
 
             <nav className="navDesktopMenu">
                 <ul>
-                    <li><a href="#" className="link">Features</a></li>
-                    <li><a href="#" className="link">Pricing</a></li>
-                    <li><a href="#" className="link">Resources</a></li>
+                    <li><a href="#root" className="link">Features</a></li>
+                    <li><a href="#root" className="link">Pricing</a></li>
+                    <li><a href="#root" className="link">Resources</a></li>
                 </ul>
                 <ul>
-                    <li><a href="#" className="link">Login</a></li>
+                    <li><a href="#root" className="link">Login</a></li>
                     <li><button className="button1">Sign up</button></li>
                 </ul>
             </nav>
 
             <nav className={"navMobileMenu " + (navOpen ? "show" : "hide" )}>
                 <ul>
-                    <li><a href="#" className="link">Features</a></li>
-                    <li><a href="#" className="link">Pricing</a></li>
-                    <li><a href="#" className="link">Resources</a></li>
+                    <li><a href="#root" className="link">Features</a></li>
+                    <li><a href="#root" className="link">Pricing</a></li>
+                    <li><a href="#root" className="link">Resources</a></li>
                     <hr />
-                    <li><a href="#" className="link">Login</a></li>
+                    <li><a href="#root" className="link">Login</a></li>
                     <li><button className="button1">Sign up</button></li>
                 </ul>
             </nav>
