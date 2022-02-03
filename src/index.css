@@ -1,73 +1,138 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+/* ------------------------ */
+/* Table of contents        */
+/* ------------------------ */
+/* 1. Properties            */
+/* 2. Layout                */
+/* 3. Typography            */
+/* 4. Utility               */
+/* 5. Queries               */
+/* ------------------------ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+
+/* ------------------------ */
+/* 1.PROPERTIES             */
+/* ------------------------ */
 
 :root {
-  --dark-blue: #3A3053;
-  --font: 'Poppins', sans-serif;
+    --col-primary-1: hsl(180, 66%, 49%);
+    --col-primary-2: hsl(257, 27%, 26%);
+    --col-secondary: hsl(0, 87%, 67%);
+    
+    --col-primary-1-hover: hsl(180, 66%, 75%);
+
+    --col-neutral-1: hsl(0, 0%, 75%);
+    --col-neutral-2: hsl(257, 7%, 63%);
+    --col-neutral-3: hsl(255, 11%, 22%);
+    --col-neutral-4: hsl(260, 8%, 14%);
+
+    --col-hr: hsl(257, 19%, 36%);
+
+    --font-family: 'Poppins', sans-serif;
+    --font-size: 18px;
 }
 
+
+/* ------------------------ */
+/* 2.LAYOUT                 */
+/* ------------------------ */
+
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html {
-  font-family: var(--font);
-  font-size: 18px;
+    scroll-behavior: smooth;
+}
+
+.container {
+    padding: 1rem;
+}
+
+
+/* ------------------------ */
+/* 3.TYPOGRAPHY             */
+/* ------------------------ */
+
+html {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+}
+
+ul {
+    list-style-type: none;
 }
 
 h1 {
-  font-size: 3rem;
+    font-size: 3rem;
 }
 
 h3 {
-  font-size: 2.25rem;
+    font-size: 2.25rem;
 }
 
 h4 {
-  font-size: 2rem;
+    font-size: 2rem;
 }
 
 h6 {
-  font-size: 1rem;
+    font-size: 1rem;
 }
 
-/* UTILITY STYLES */
+
+/* ------------------------ */
+/* 4.UTILITY                */
+/* ------------------------ */
 
 .hide {
-  display: none;
+    visibility: hidden !important;
+    opacity: 0 !important;
 }
 
 .copied {
-  background-color: var(--dark-blue) !important;
+    background-color: var(--col-primary-2) !important;
+}
+
+.btn-primary {
+    background-color: var(--col-primary-1);
+    border-radius: 2em;
+    border-style: none;
+    padding: .75em 1.25em;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: var(--col-primary-1-hover);
+    cursor: pointer;
+}
+
+.btn-secondary {
+    text-decoration: none;
+    color: var(--col-neutral-2);
+}
+
+.btn-secondary:hover {
+    color: var(--col-neutral-4);
+}
+
+.btn-primary,
+.btn-secondary {
+    font-weight: 700;
+    transition: .15s;
 }
 
 
-.container {
-  padding: 1rem;
-}
-
-.link {
-  text-decoration: none;
-}
-
-.button1 {
-  background-color: #2BD1D1;
-  border-radius: 2em;
-  border-style: none;
-  padding: .25em 1em .4em 1em;
-  color: white;
-}
-
-.button1:hover {
-  background-color: #98E4E4;
-  cursor: pointer;
-}
+/* ------------------------ */
+/* 6.QUERIES                */
+/* ------------------------ */
 
 @media (min-width:1000px) {
-  .container {
-    width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+    .container {
+        width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
