@@ -1,23 +1,37 @@
 .boost {
     padding: 5rem 0;
-    background-color: var(--dark-blue);
+    text-align: center;
+
+    background-color: var(--col-primary-2);
     background-image: url("./bg-boost-mobile.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    text-align: center;
 }
 
-.boost h3 {
+.boost__title {
     color: white;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 
-.boost .button1 {
-    font-size: 1.25rem;
+.boost__btn {
+    font-size: 1.15rem;
 }
+
+
+/* ------------------------ */
+/* QUERIES                  */
+/* ------------------------ */
 
 @media (min-width:376px) {
     .boost {
+        padding: 3rem 0;
         background-image: url("./bg-boost-desktop.svg");
+    }
+}
+
+@media (min-width:900px) {
+    .boost__title {
+        font-size: 2.15rem;
     }
 }
