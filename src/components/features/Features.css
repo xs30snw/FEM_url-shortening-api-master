@@ -1,96 +1,175 @@
 .features {
-    background-color: #F0F1F6;
-    text-align: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    background-color: var(--col-features-bg);
+    padding-top: 5rem;
+    padding-bottom: 4.5rem;
 }
 
-.featuresHeader {    
-    margin-bottom: 4rem;
+.features__header {    
+    margin-bottom: 5rem;
 }
 
-.featuresHeader > h3,
-.featuresArticles > article > h4 {
-    color: #33303B;
+.features__header,
+.features__card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
 }
 
-.featuresHeader > p,
-.featuresArticles > article > p {
-    color: #9B9BA3;
-}
-
-.featuresArticles {
+.features__cards {
     position: relative;
     display: flex;
     flex-direction: column;
-    row-gap: 4rem;
+    row-gap: 5rem;
 }
 
-.featuresArticles > article {
+.features__card {
     border-radius: .3rem;
-    flex: 0 1 20%;
-    padding: 3rem 1rem 1rem 1rem;
+    /* flex: 0 1 20%; */
+    padding: 4rem 1.75rem 2.25rem 1.75rem;
     position: relative;
-    background-color: #fff;
+    background-color: white;
 
     z-index: 5;
 }
 
-.featuresArticles::after {
-    display: block;
-    content: "";
-    background-color: #2BD1D1;
-    position: absolute;
-    top: 4rem;
-    left: 50%;
-    transform: translate(-50%, 0);
-    width: .4rem;
-    height: 75%;
-    z-index: 4;
-}
+.features__card__icon {
+    background-color: var(--col-primary-2);
+    border-radius: 50%;
+    width: 4.5rem;
+    height: 4.5rem;
+    
+    display: grid;
+    place-items: center;
 
-.featuresIcon {
     position: absolute;
     top: -2.25rem;
     left: 50%;
     transform: translate(-50%, 0);
+}
 
-    background-color: var(--dark-blue);
-    border-radius: 50%;
-    width: 4.5rem;
-    height: 4.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Vertical line across cards */
+.features__cards::after {
+    display: block;
+    content: "";
+    background-color: var(--col-primary-1);
+    width: .4rem;
+    height: 75%;
+    
+    position: absolute;
+    z-index: 4;
+
+    top: 4rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+
+/* ------------------------ */
+/* TYPOGRAPHY               */
+/* ------------------------ */
+
+.features {
+    text-align: center;
+}
+
+.features__header__title {
+    font-size: 1.5rem;
+}
+
+.features__header__desc {
+    font-size: .9rem;
+}
+
+.features__card__title {
+    font-size: 1.25rem;
+}
+
+.features__card__desc {
+    font-size: .85rem;
+}
+
+.features__header__title,
+.features__card__title {
+    color: var(--col-neutral-3);
+}
+
+.features__header__desc,
+.features__card__desc {
+    color: var(--col-neutral-2);
+}
+
+
+/* ------------------------ */
+/* QUERIES                  */
+/* ------------------------ */
+
+@media (min-width:525px) {
+    .features > .container {
+        max-width: 525px;
+    }
 }
 
 @media (min-width:900px) {
-    .featuresArticles {
+    .features > .container {
+        max-width: none;
+    }
+
+    .features__cards {
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
-    .featuresArticles > article {
-        flex: 0 0 30%;
-    }
-
-    .featuresArticles {
+    /* Cards' vertical positions descend like stairs  */
+    .features__cards {
         padding: 2rem 0;
     }
-
-    .featuresArticles > article:first-of-type {
+    .features__card:first-of-type {
         top: -2rem;
-    }
-    
-    .featuresArticles > article:last-of-type {
+    }    
+    .features__card:last-of-type {
         top: 2rem;
     }
 
-    .featuresArticles::after {
-        top: 50%;
-        left: 6rem;
+    /* Vertical line behind cards becomes horizontal */
+    .features__cards::after {
         height: .5rem;
         width: 75%;
+
+        top: 50%;
+        left: 6rem;
         transform: translate(0, -50%);
+    }
+
+    .features {
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+    }
+
+    .features__card {
+        flex: 0 0 31%;
+        text-align: left;
+    }
+
+    .features__card__icon {
+        left: 3.75rem;
+    }
+
+    .features__cards::after {
+        top: 43%;
+    }
+
+    .features__header {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 30rem;
+    }
+
+    .features__header__title {
+        font-size: 2.15rem;
+        line-height: 1.75em;
+    }
+
+    .features__header__desc {
+        font-size: 1.1rem;
     }
 }
