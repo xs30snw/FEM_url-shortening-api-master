@@ -48,8 +48,16 @@ html {
     scroll-behavior: smooth;
 }
 
+.wrapper {
+    min-width: 375px; 
+    overflow-x: hidden;
+}
+
 .container {
-    padding: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -100,7 +108,7 @@ h6 {
     background-color: var(--col-primary-1);
     border-radius: 2em;
     border-style: none;
-    padding: .75em 1.25em;
+    padding: .75em 2em;
     color: white;
 }
 
@@ -129,10 +137,8 @@ h6 {
 /* 6.QUERIES                */
 /* ------------------------ */
 
-@media (min-width:1000px) {
+@media (min-width:1150px) {
     .container {
-        width: 1000px;
-        margin-left: auto;
-        margin-right: auto;
+        width: 1150px;
     }
 }

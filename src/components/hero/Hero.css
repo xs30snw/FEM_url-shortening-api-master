@@ -1,0 +1,134 @@
+.hero,
+.hero__body {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero {
+    row-gap: 2rem;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.hero__img {
+    position: relative;
+    left: 22vw;
+
+    max-width: 480px;
+    align-self: center;
+}
+
+.hero__body {
+    max-width: 480px;
+    row-gap: 1rem;
+    align-items: center;
+    text-align: center;
+}
+
+.hero__title {
+    font-size: 2.25rem;
+    line-height: 1.15em;
+    color: var(--col-neutral-3);
+}
+
+.hero__desc {
+    color: var(--col-neutral-2);
+    line-height: 1.7em;
+}
+
+.hero__btn {
+    margin: 1rem 0;
+    font-size: 1.15rem;
+}
+
+
+/* ------------------------ */
+/* QUERIES                  */
+/* ------------------------ */
+
+@media (min-width:450px) {
+    .hero__img {
+        left: 12vw;
+    }
+}
+
+@media (min-width:650px) {
+    .hero__img {
+        left: 7vw;
+    }
+}
+
+@media (min-width:978px) {
+    .hero {
+        flex-direction: row-reverse;
+        column-gap: 1rem;
+        
+        justify-content: flex-end;
+        width: max-content;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        column-gap: 1.5rem;
+    }
+
+    .hero__img {
+        max-width: 33%;
+        left: 0;
+    }
+
+    .hero__body {
+        max-width: none;
+        flex-basis: 50vw;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .hero__title {
+        font-size: 3.5rem;
+    }
+
+    .hero__desc {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width:1150px) {
+    .hero {
+        margin-left: calc((100vw - 1150px)/2);
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        column-gap: 1.5rem;
+    }
+
+    .hero__img {
+        max-width: 40%;
+    }
+
+    .hero__body {
+        flex-basis: calc(1150px/2);
+    }
+
+    .hero__title {
+        font-size: 3.5rem;
+    }
+
+    .hero__desc {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width:1440px) {
+    .hero {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        column-gap: 5rem;
+    }
+
+    .hero__title {
+        font-size: 4.2rem;
+    }
+
+    .hero__desc {
+        font-size: 1.2rem;
+    }
+}

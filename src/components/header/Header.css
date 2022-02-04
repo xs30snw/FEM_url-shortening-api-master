@@ -106,7 +106,7 @@ hr {
 /* QUERIES                  */
 /* ------------------------ */
 
-@media (min-width:900px) {
+@media (min-width:786px) {
     .header__nav-desktop {
         display: flex;
     }

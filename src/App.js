@@ -1,5 +1,5 @@
 import Header     from './components/header/Header';
-import Welcome    from './components/welcome/Welcome';
+import Hero       from './components/hero/Hero';
 import Shortener  from './components/shortener/Shortener';
 import Features   from './components/features/Features';
 import Boost      from './components/boost/Boost';
@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="wrapper">
       <Header />
-      <Welcome />
+      <Hero />
       <Shortener />
       <Features />
       <Boost />
