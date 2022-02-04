@@ -10,6 +10,10 @@
     column-gap: 3rem;
 }
 
+.header__logo path {
+    fill: var(--col-neutral-4);
+}
+
 
 /* ------------------------ */
 /* MOBILE                   */
@@ -34,8 +38,11 @@
 }
 
 .header__btn-mobile-menu {
-    font-size: 1.75rem;
-    color: var(--col-neutral-2);
+    width: 1.25rem;
+}
+
+.header__btn-mobile-menu path {
+    fill: var(--col-neutral-2);
 }
 
 .btn-primary--mobile,

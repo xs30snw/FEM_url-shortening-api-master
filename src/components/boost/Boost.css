@@ -3,7 +3,7 @@
     text-align: center;
 
     background-color: var(--col-primary-2);
-    background-image: url("./bg-boost-mobile.svg");
+    background-image: url("../../media/bg-boost-mobile.svg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -26,7 +26,7 @@
 @media (min-width:376px) {
     .boost {
         padding: 3rem 0;
-        background-image: url("./bg-boost-desktop.svg");
+        background-image: url("../../media/bg-boost-desktop.svg");
     }
 }
 

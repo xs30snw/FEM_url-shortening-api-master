@@ -1,6 +1,6 @@
-import iRecognition from './icon-brand-recognition.svg';
-import iRecords     from './icon-detailed-records.svg';
-import iCustomize   from './icon-fully-customizable.svg';
+import iRecognition from '../../media/icon-brand-recognition.svg';
+import iRecords     from '../../media/icon-detailed-records.svg';
+import iCustomize   from '../../media/icon-fully-customizable.svg';
 
 import './Features.css';
 

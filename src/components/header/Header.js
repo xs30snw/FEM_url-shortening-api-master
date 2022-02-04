@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import ShortlyLogo from './logo.svg';
+import IconMobileMenu from '../../media/IconMobileMenu';
+import Logo from '../../media/Logo';
 
 import './Header.css';
 
@@ -29,7 +30,7 @@ function Header() {
             onMouseLeave={() => closeNavAfter(500)}
             onMouseOver={() => resetNavClosing()}  
         >
-            <img className="header__logo" src={ShortlyLogo} alt="Shortly logo" />
+            <Logo className='header__logo'/>
 
             <nav className="header__nav-desktop">
                 <ul>
@@ -54,9 +55,10 @@ function Header() {
                 </ul>
             </nav>
 
-            <i className="las la-bars header__btn-mobile-menu"
-               onClick={() => handleClick()}
-            ></i>
+            <IconMobileMenu
+                className='header__btn-mobile-menu'
+                onClick={() => handleClick()}
+            />
         
         </header>
     )

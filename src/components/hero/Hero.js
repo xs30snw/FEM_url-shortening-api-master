@@ -1,4 +1,4 @@
-import PersonWorking from './illustration-working.svg';
+import PersonWorking from '../../media/illustration-working.svg';
 
 import './Hero.css';
 
