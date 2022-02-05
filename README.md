@@ -1,11 +1,12 @@
-# Frontend Mentor - URL Shortening API Master — Work in progress
+# URL Shortening API Master
 
-This is a solution to [URL shortening API landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G).
-- A user gets to see a landing page, and also should be able to shorten their links by using [https://shrtco.de/](https://shrtco.de/) API;
-- The app is made with React.js, and an additional react library [react-copy-to-clipboard](https://www.npmjs.com/package/react-copy-to-clipboard);
-- Social network icons imported from [icons8](https://maxst.icons8.com). 
+My solution to [URL shortening API landing page challenge](https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G)  on Frontend Mentor.
 
-The project deployed to GitHub with the help of *react-gh-pages* package. The master branch contains the app's source code (the code the app's developers edit), and the gh-pages branch contains a built version of the app (i.e. the code that GitHub Pages serves to the app's visitors).
+- A user gets to shorten their links by using [https://shrtco.de/](https://shrtco.de/) API;
+- The app made with Create React App and react library [react-copy-to-clipboard](https://www.npmjs.com/package/react-copy-to-clipboard);
+- Font Awesome icons using [Free License](https://fontawesome.com/license/free). 
+
+The project deployed to GitHub with [gh-pages](https://www.npmjs.com/package/gh-pages) package. *Gh-pages* branch contains the build.
 
 
 - Live Site URL: [GitHub Pages](https://xs30snw.github.io/FEM_url-shortening-api-master/)
@@ -14,13 +15,25 @@ The project deployed to GitHub with the help of *react-gh-pages* package. The ma
 
 ![](./screenshot.png)
 
+## File structure
+
+```
+.
+├── README.md               # Project description
+├── build                   # CRA production build
+├── package.json            # NPM meta and dependencies 
+├── public                  # Public dev files
+│   ├── index.html          # React app is injected into here
+├── screenshot.png          # Project preview
+└── src                     # Dev source files
+    ├── App.js              # Main React app
+    ├── components          # React components with local styles
+    ├── index.css           # General styles
+    ├── index.js            # CRA entry
+    └── media               # Media files
+```
+
 ## Ideas for improvement
 
-- [x] Limit the number of shortened link items to 3;
-- [x] Implement link copy, and button copied style;
-- [ ] Copy buttons don't store their copy state;
-- [ ] The link is not copied after the first click;
-- [ ] Proper URL validation function, and error handling;
-- [ ] Layout breaks when links are too long;
-- [ ] Rearrange code;
-- [ ] Rearrange styles, make the view more resembling of the mockup.
+- [ ] Copy button doesn't copy after the first click;
+- [ ] URL validation and error handling on client side.
