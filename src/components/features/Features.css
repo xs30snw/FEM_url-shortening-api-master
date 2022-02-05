@@ -1,6 +1,5 @@
 .features {
     background-color: var(--col-features-bg);
-    padding-top: 5rem;
     padding-bottom: 4.5rem;
 }
 
@@ -141,7 +140,6 @@
     }
 
     .features {
-        padding-top: 7rem;
         padding-bottom: 7rem;
     }
 

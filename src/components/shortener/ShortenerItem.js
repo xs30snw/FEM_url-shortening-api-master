@@ -5,11 +5,13 @@ function ShortenerItem(props) {
     const [text, setText] = useState('');
 
     function copyLink (e) {
-        const shortenerItemButtons = document.getElementsByClassName('shortenerItemButton');
+        // Remove copied styles from all the buttons
+        const shortenerItemButtons = document.getElementsByClassName('shortener__item__btn-copy');
         for (let button of shortenerItemButtons) {
             button.classList.remove('copied');
             button.innerHTML = 'Copy';
         };
+        // Add copied styles to the current button
         const shortenerItemOutput = e.target.parentNode.querySelector('p:last-of-type');
         setText(shortenerItemOutput.innerHTML);
         e.target.classList.add('copied');
@@ -17,13 +19,14 @@ function ShortenerItem(props) {
     } 
 
     return (
-        <div className="shortenerItem">
+        <div className='shortener__item'>
             <p>{props.linkInput}</p>
             <hr />
-            <p className="shortenerItemOutput">{props.linkOutput}</p>
+            <p className='shortener__item__output'>{props.linkOutput}</p>
+            
             <CopyToClipboard text={text}>
                 <button
-                    className='shortenerItemButton'
+                    className='btn-primary shortener__item__btn-copy'
                     onClick={(e) => copyLink(e)}
                 >Copy</button>
             </CopyToClipboard>
@@ -31,4 +34,4 @@ function ShortenerItem(props) {
     )
 }
 
-export default ShortenerItem
+export default ShortenerItem;
