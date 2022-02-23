@@ -80,6 +80,10 @@ ul {
 /* 4.UTILITY                */
 /* ------------------------ */
 
+a {
+    text-decoration: none;
+}
+
 .hide {
     visibility: hidden !important;
     opacity: 0 !important;
@@ -125,7 +129,7 @@ ul {
 
 
 /* ------------------------ */
-/* 6.QUERIES                */
+/* 5.QUERIES                */
 /* ------------------------ */
 
 @media (min-width:1150px) {

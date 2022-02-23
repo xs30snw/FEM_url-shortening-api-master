@@ -30,7 +30,7 @@ function Header() {
             onMouseLeave={() => closeNavAfter(500)}
             onMouseOver={() => resetNavClosing()}  
         >
-            <Logo className='header__logo'/>
+            <Logo className='header__logo' />
 
             <nav className="header__nav-desktop">
                 <ul>
@@ -55,10 +55,13 @@ function Header() {
                 </ul>
             </nav>
 
-            <IconMobileMenu
-                className='header__btn-mobile-menu'
-                onClick={() => handleClick()}
-            />
+            <button className='header__btn-mobile-menu'
+                aria-haspopup='menu'
+                onClick={() => handleClick()} >
+                <IconMobileMenu
+                    
+                />
+            </button>
         
         </header>
     )

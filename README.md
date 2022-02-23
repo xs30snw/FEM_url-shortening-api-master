@@ -33,6 +33,12 @@ The project deployed to GitHub with [gh-pages](https://www.npmjs.com/package/gh-
     └── media               # Media files
 ```
 
+## Tested
+
+- Win 10:
+    - Chrome v98,
+    - Firefox v97.
+
 ## Ideas for improvement
 
 - [ ] Copy button doesn't copy after the first click;

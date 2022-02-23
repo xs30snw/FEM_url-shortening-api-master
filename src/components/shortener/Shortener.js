@@ -71,16 +71,23 @@ export class Shortener extends React.Component {
         });
 
         return (
-            <section className="shortener">
+            <section className="shortener" aria-label='Input and shortened links'>
                 <div className="container">
-                    <form className="shortener__form"
-                          onSubmit={(e) => this.handleClick(e)}>
+                    <form
+                        className="shortener__form"
+                        aria-label='URL shortener'
+                        onSubmit={(e) => this.handleClick(e)}>
 
-                        <input type="text" id="shortener__input" name="shortener__input" placeholder="Shorten a link here..." />
+                        <input
+                            type="text"
+                            id="shortener__input"
+                            name="shortener__input"
+                            aria-label='Field for a link to shorten'
+                            placeholder="Shorten a link here..." />
 
-                        <label id="shortener__lbl-error"
-                               htmlFor="shortener__input" 
-                               className="hide">Please add a link</label>
+                        <label
+                            id="shortener__lbl-error" 
+                            className="hide">Please add a link</label>
 
                         <button type="submit" className="shortener__submit btn-primary">Shorten It!</button>
 

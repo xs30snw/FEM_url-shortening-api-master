@@ -41,6 +41,11 @@
     width: 1.25rem;
 }
 
+.header__btn-mobile-menu {
+    background-color: transparent;
+    border: none;
+}
+
 .header__btn-mobile-menu path {
     fill: var(--col-neutral-2);
 }

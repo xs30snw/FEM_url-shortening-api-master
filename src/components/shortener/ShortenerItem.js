@@ -19,7 +19,7 @@ function ShortenerItem(props) {
     } 
 
     return (
-        <div className='shortener__item'>
+        <section className='shortener__item' aria-label={'Shortened link #' + props.key}>
             <p>{props.linkInput}</p>
             <hr />
             <p className='shortener__item__output'>{props.linkOutput}</p>
@@ -30,7 +30,7 @@ function ShortenerItem(props) {
                     onClick={(e) => copyLink(e)}
                 >Copy</button>
             </CopyToClipboard>
-        </div>
+        </section>
     )
 }
 
