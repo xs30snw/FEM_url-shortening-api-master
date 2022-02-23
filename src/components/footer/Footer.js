@@ -3,7 +3,7 @@ import IconTwitter   from '../../media/IconTwitter';
 import IconPinterest from '../../media/IconPinterest';
 import IconInstagram from '../../media/IconInstagram';
 
-import Logo from '../../media/Logo';
+import Logo from '../../media/logo';
 
 import './Footer.css';
 

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import IconMobileMenu from '../../media/IconMobileMenu';
-import Logo from '../../media/Logo';
+import Logo from '../../media/logo';
 
 import './Header.css';
 
